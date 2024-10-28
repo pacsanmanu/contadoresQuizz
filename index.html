@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Puntos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Puntos</h1>
+        <div class="team" id="team1">
+            <h2>Equipo 1</h2>
+            <div class="counter" id="counter1">0</div>
+            <button class="button" onclick="incrementar('counter1')">+1 Punto</button>
+        </div>
+        <div class="team" id="team2">
+            <h2>Equipo 2</h2>
+            <div class="counter" id="counter2">0</div>
+            <button class="button" onclick="incrementar('counter2')">+1 Punto</button>
+        </div>
+        <!-- Botón para restablecer los contadores -->
+        <button class="button reset" onclick="restablecer()">Restablecer</button>
+    </div>
+    <!-- Vinculamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
